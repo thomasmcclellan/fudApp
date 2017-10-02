@@ -16,7 +16,7 @@
         <div class="col-sm-2 form-group">
           <label for="amount">Amount</label>
           <input 
-            for="number" 
+            type="number" 
             id="amount" 
             class="form-control"
             name="amount"
@@ -31,13 +31,15 @@
           <button 
             class="btn btn-success" 
             type="submit"
-            [disabled]="!f.valid">Add</button>
+            [disabled]="!f.valid">{{ editMode ? 'Update' : 'Add' }}</button>
           <button 
             class="btn btn-danger" 
-            type="button">Delete</button>
+            type="button" 
+            (click)="onDelete()" 
+            *ngIf="editMode">Delete</button>
           <button 
             class="btn btn-primary" 
-            type="button">Clear</button>
+            type="button" (click)="onClear()">Clear</button>
         </div>
       </div>
     </form>
