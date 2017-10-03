@@ -1,8 +1,20 @@
+.navbar-header {
+  background-color: #F3F3F3;
+}
+
 li a {
   font-family: Bad Script, cursive;
   color: #6ab6f7;
 }
 
 li a:active {
-  color: #9297f6; 
+  background-color: #9297f6;
+}
+
+li a:hover {
+  color: #a6d666;
+}
+
+li a:focus {
+  color: #9297f6;
 }
