@@ -1,0 +1,8 @@
+li a {
+  font-family: Bad Script, cursive;
+  color: #6ab6f7;
+}
+
+li a:active {
+  color: #9297f6; 
+}
